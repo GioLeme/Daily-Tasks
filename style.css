@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Roboto+Mono:wght@600&display=swap');
+
+body {
+  height: 100vh;
+  background-color: #fff9f0ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.to-do-list {
+  display: grid;
+  grid-template-rows: 10% 1fr min-content;
+  width: 55%;
+  height: 75%;
+  border-radius: 15px;
+  border: 2px solid #958d8d;
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  gap: 15px;
+}
+
+.title {
+  display: flex;
+  font-family: 'Roboto Mono', monospace;
+  align-items: center;
+  color: #5f5959;
+  font-size: 20px;
+  background-color: rgba(235, 223, 207, 0.305);
+  border-radius: 15px 15px 0px 0px;
+  justify-content: center
+
+}
+
+.tasks {
+  border: 1px;
+}
+
+.new-task {
+  background-color: rgba(235, 223, 207, 0.305);
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px;
+  gap: 10px;
+}
+
+.new-task__input {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  height: 50px;
+}
+
+.new-task__button {
+  background-color: #d7c8b1ae;
+  color: #5f5959;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.new-task__button:hover {
+  background-color: #d4bd9cae;
+}
+
+.tasks__group{
+  display: grid;
+  gap: 10px;
+}
+
+.tasks__task{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks__checkbox{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tasks__checkbox:checked{
+  filter: hue-rotate(210deg);
+}
